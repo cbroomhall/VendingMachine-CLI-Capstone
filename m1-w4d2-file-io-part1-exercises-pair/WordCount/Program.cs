@@ -6,10 +6,17 @@ using System.Threading.Tasks;
 
 namespace WordCount
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
+            Console.WriteLine("Please provide a filesystem path for your text file and press enter:");
+            string inputPath = Console.ReadLine();
+
+            ReadFile.ReadTextFile(inputPath);
+
+
+
         }
     }
 }
